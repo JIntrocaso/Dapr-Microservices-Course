@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcFront", "MvcFront\MvcFront.csproj", "{ECB85865-8596-44BE-AFFA-CEC0B4557116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersApi", "OrdersApi\OrdersApi.csproj", "{51B7C0FA-1C87-43C6-A5FF-2224C8633206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECB85865-8596-44BE-AFFA-CEC0B4557116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB85865-8596-44BE-AFFA-CEC0B4557116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB85865-8596-44BE-AFFA-CEC0B4557116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB85865-8596-44BE-AFFA-CEC0B4557116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B7C0FA-1C87-43C6-A5FF-2224C8633206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B7C0FA-1C87-43C6-A5FF-2224C8633206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B7C0FA-1C87-43C6-A5FF-2224C8633206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B7C0FA-1C87-43C6-A5FF-2224C8633206}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D29DE6A6-1612-4F52-8BB2-E64968F944BF}
+	EndGlobalSection
+EndGlobal

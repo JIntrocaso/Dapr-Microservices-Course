@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model UploadDataCommand
+@{
+}
+
+<div>
+    <img src="~/images/faceslogo.png" />
+    <h2></h2>
+</div>
+<form asp-controller="Home" asp-action="UploadData" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col-md-10">
+            <h3>Enter your email and address and upload your pictures</h3>
+            <div class="form-group">
+                <label asp-for="UserEmail"></label>
+                <input asp-for="UserEmail" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-10">
+            <p>Upload your image file using the button below</p>
+            <input type="file" name="file" id="imageBrowse" />
+        </div>
+        <div id="imgPreview" class="img-thumbnail" style="display:none">
+            <img class="img-responsive" id="targetImage" />
+            <div class="caption">
+                <a href="#" onclick="ClearPreview()"><i class="glyphicon glyphicon-trash"></i></a>
+                <span id="description"></span>
+            </div>
+        </div>
+    </div>
+    <input type="submit" class="btn btn-info" value="Submit" />
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $("#imageBrowse").change(function() {
+                var File = this.files;
+
+                if (File && File[0]) {
+                    ReadImage(File[0]);
+                }
+            })
+        })
+
+    </script>
+}
